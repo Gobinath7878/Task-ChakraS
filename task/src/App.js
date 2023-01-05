@@ -38,7 +38,7 @@ function App() {
   return (
     <ChakraProvider>
       <Box>
-        <Box textAlign="center">
+        <Box mt="2em" textAlign="center">
           <Heading as="h1" size="xl">
             Highlighting the Text Using react-text-annotate
           </Heading>
