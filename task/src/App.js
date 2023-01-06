@@ -6,6 +6,9 @@ import {
   Heading,
   Table,
   Tbody,
+  Th,
+  Tr,
+  Thead,
   TableContainer,
   Accordion,
   AccordionItem,
@@ -90,11 +93,17 @@ function App() {
                     <AccordionPanel pb={4}>
                       <TableContainer>
                         <Table>
+                          <Thead >
+                            <Tr>
+                              <Th textAlign="center">Text</Th>
+                              <Th textAlign="center">Type</Th>
+                            </Tr>
+                          </Thead>
                           <Tbody>
                             {state.value.map((value) => (
                               <tr key={value.start}>
                                 <td>{value.text}</td>
-                                {value.text && <td>Button</td>}
+                                {value.text && <td>Text</td>}
                               </tr>
                             ))}
                           </Tbody>
